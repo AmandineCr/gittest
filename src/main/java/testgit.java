@@ -1,21 +1,19 @@
 public class testgit {
     <template>
-  <div id="app">
-    <h1>{{ msg }}</h1>
-    <img id="popmachine" src="https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Fast-Food-PNG-Clipart/Popcorn_PNG_Clip_Art_Image.png?m=1507172108">
-    <h2><strong>Select a Popcorn machine :</strong></h2>
-    <h4>
-    Hide "off" Popcorn Machines
-        <toggle-button :value="seeMachines" @change="seeMachines = !seeMachines"/>
-    </h4>
-    <ul>
-      <Machine v-for="machine in machines"
-            :key="machine.id"
-    v-bind:machine="machine"
-    v-if="!seeMachines || machine.on">
+
       </Machine>
     </ul>
+ <input type="submit" value="Add">
+      <img id="bucket" src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Popcorn_Time_logo.png">
+    </form>
+    <p>
+      <a href="http://www.netflix.com"><img id="netflix" src="https://cdn.makeuseof.com/wp-content/uploads/2016/02/netflix-tools-670x335.jpg"/></a>
+    </p>
+  </div>
+</template>
 
+<script>
+    export default {
     <form @submit.prevent="addpopcornMachine" class="form">
       <img id="bucket" src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Popcorn_Time_logo.png">
       <input type="text" placeholder="New popcorn flavor" v-model="buffer.name">
