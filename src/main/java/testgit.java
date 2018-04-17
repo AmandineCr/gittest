@@ -13,29 +13,7 @@ public class testgit {
 </template>
 
 <script>
-    export default {
-    <form @submit.prevent="addpopcornMachine" class="form">
-      <img id="bucket" src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Popcorn_Time_logo.png">
-      <input type="text" placeholder="New popcorn flavor" v-model="buffer.name">
-      <select name="status" v-model="buffer.on">
-        <option v-bind:value="true">ON</option>
-        <option v-bind:value="false">OFF</option>
-      </select>
-      <input type="submit" value="Add">
-      <img id="bucket" src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Popcorn_Time_logo.png">
-    </form>
-    <p>
-      <a href="http://www.netflix.com"><img id="netflix" src="https://cdn.makeuseof.com/wp-content/uploads/2016/02/netflix-tools-670x335.jpg"/></a>
-    </p>
-  </div>
-</template>
-
-<script>
-    export default {
-        name: 'app',
-                data () {
-            return {
-                    seeMachines: false,
+    export def
                     msg: 'POPCORN MACHINE',
                     buffer: {
                 id: 3, name: 'New popcorn machine', on: true
@@ -58,7 +36,29 @@ public class testgit {
         }
     }
 </script>
+        ault {
+<form @submit.prevent="addpopcornMachine" class="form">
+<img id="bucket" src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Popcorn_Time_logo.png">
+<input type="text" placeholder="New popcorn flavor" v-model="buffer.name">
+<select name="status" v-model="buffer.on">
+<option v-bind:value="true">ON</option>
+<option v-bind:value="false">OFF</option>
+</select>
+<input type="submit" value="Add">
+<img id="bucket" src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Popcorn_Time_logo.png">
+</form>
+<p>
+<a href="http://www.netflix.com"><img id="netflix" src="https://cdn.makeuseof.com/wp-content/uploads/2016/02/netflix-tools-670x335.jpg"/></a>
+</p>
+</div>
+</template>
 
+<script>
+    export default {
+        name: 'app',
+        data () {
+        return {
+        seeMachines: false,
 <style scoped>
 #app {
         font-family: 'Avenir', Helvetica, Arial, sans-serif;
